@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<windows.h>
+void Transform(int a[][2],int b[][2],int x,int y);
+void Transform(int a[][2],int b[][2],int x,int y){
+
+	for(int i=0;i<x;i++)
+		for(int j=0;j<y;j++)
+			b[j][i]=a[i][j];
+
+}
+int main(){
+	int a[3][4]={{1,2,3},{4},{5,6}},b[4][3],x,y;
+
+//INPUT
+	for(x=0;x<3;x++)
+		for(y=0;y<4;y++)
+			scanf("%d",&a[x][y]);
+
+
+	Transform(a,b,3,4);
+
+//OUTPUT
+	for(x=0;x<4;x++){
+		for(y=0;y<3;y++)
+			printf("%d ",b[x][y]);
+		putchar('\n');
+		}
+	Sleep(5200);
+}
