@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+	int i,j;
+	char a[100],b[100],c[100],n,k;
+	scanf("%d",&n); for(k=0;k<n;k++){
+		scanf("%s",a);
+		scanf("%s",b);
+		for(i=0;a[i]!='\0';i++)
+			c[i]=a[i]; for(j=0;b[j]!='\0';j++)
+				c[i+j]=b[j]; c[i+j] = '\0'; puts(c);
+				}
+			return 0;
+		}
+//偷懒模式
+#include <stdio.h>
+#include <assert.h>
+char *strcata(char *strDest,const char *strScr){
+char * address = strDest;       
+assert((strDest != NULL) && (strScr != NULL));       
+while(*strDest)       {              strDest++;       }       
+while(*strDest++ = *strScr++)       {              NULL;       } 
+return address;}
+int main(){
+char str1[20];
+char str2[20]; int n,i=0;
+scanf("%d",&n); 
+for(i=0;i<n;i++){
+scanf("%s",str1);
+scanf("%s",str2);
+printf("%s\n",strcata(str1,str2));    }}
