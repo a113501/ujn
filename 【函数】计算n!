@@ -1,0 +1,14 @@
+#include<stdio.h>
+int sum(int n);
+int main()
+{ 
+int x,temp;
+while(scanf("%d",&temp)!=EOF) 
+{ x=temp; printf("%d\n",sum(x));  }
+return 0;}
+int sum(int n)
+{ int tot=1; for(int i=1;i<=n;i++)
+{ 
+tot*=i;
+} 
+return tot;}
