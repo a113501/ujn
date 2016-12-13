@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 6
+#define N 100
 int fun(int score[],int below[],int m)
 {
     int average,sum=0,count=0,i;
